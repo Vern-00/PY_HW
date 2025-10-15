@@ -12,20 +12,18 @@ class Circle(Base):
         return "This is a circle"
     
     def draw(self):
-        return f"""
-({self.x}, {self.y})\n{self.size}
-, - ~ ~ ~ - ,
-, ' ' ,
-, ,
-, ,
-, ,
-, ,
-, ,
-, ,
-, ,
-, , '
-' - , _ _ _ , '
-"""
+    return f"({self.x}, {self.y})\n{self.size}\n" \
+           "            , - ~ ~ ~ - ,\n" \
+           "        , '               ' ,\n" \
+           "      ,                      ,\n" \
+           "     ,                        ,\n" \
+           "    ,                          ,\n" \
+           "    ,                          ,\n" \
+           "    ,                          ,\n" \
+           "     ,                        ,\n" \
+           "      ,                      ,\n" \
+           "        ,                 , '\n" \
+           "          ' - , _ _ _ , '\n"
 
 def main():
     c = Circle(1,2,3)

@@ -14,18 +14,18 @@ class Circle(Base):
     def draw(self):
         return f"""
 ({self.x}, {self.y})\n{self.size}
-        , - ~ ~ ~ - ,
-    , '               ' ,
-  ,                      ,
- ,                        ,
-,                          ,
-,                          ,
-,                          ,
- ,                        ,
-  ,                      ,
-    ,                 , '
-      ' - , _ _ _ , '
-              """
+, - ~ ~ ~ - ,
+, ' ' ,
+, ,
+, ,
+, ,
+, ,
+, ,
+, ,
+, ,
+, , '
+' - , _ _ _ , '
+"""
 
 def main():
     c = Circle(1,2,3)
